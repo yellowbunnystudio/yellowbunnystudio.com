@@ -1,4 +1,3 @@
-# yellowbunnystudio.github.io
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +35,7 @@
         </div>
     </header>
     
-    <main>
+    
         <section class="section-title">
             <h2> Maura Kent</h2>
             <h5> Postproduction | Film Editor | Colorist | Motion Graphics</h5>
@@ -94,12 +93,7 @@
         
          
         
-        
-        
-        
-        
-        
-        
+    
         
     <section class="footer">
           <footer class="footer-distributed">
@@ -141,21 +135,7 @@
     </section>
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </main>
-    
-    
+ 
 
     </body>
     
