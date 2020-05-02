@@ -1,0 +1,730 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size:1em;
+    height:100%;
+}
+
+img, iframe{
+  max-width: 100%;
+}
+
+html{
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************HEADER**************************************************************************************************************************/
+/* header */
+
+
+
+video{
+  width:100%;  
+}
+
+
+
+.section-title{
+    margin-top:87px;
+    color:black;
+    font-size:20px;
+    font-family: 'Lora', serif;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacer{
+    padding:50px;
+}
+
+.logotype{
+    display:inline-block;
+    float:left;
+}
+
+
+.logo{
+    font-size:25px;
+    text-decoration:none;
+    color:#023b64;
+    font-family: 'Lora', serif;
+    padding: 5px;
+}
+
+
+
+.navright{
+    float:right;
+}
+
+.navleft{
+    padding: 10px 15px;
+    
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    float:right;
+    
+    
+    
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #d39d2d;
+  
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #d39d2d;
+  
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+/***********************************************************************************************ENDHEADER**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************BODY/MAININFO**************************************************************************************************************************/
+
+
+
+.projectheader{
+    display:block;
+    margin-bottom:48px;
+    padding-left: 48px;
+    padding-right:48px;
+    color: #023b64;
+   
+}
+
+
+li{
+    list-style:none;
+    text-decoration:none;
+}
+
+
+.break{
+    border: 5px solid #023b64;
+    border-radius: 10px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.videoart{
+    width:50%;
+    float:right;
+    padding:15px;
+    align-content:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+.videomain{
+    width:50%;
+    float:left;
+    padding:15px;
+    
+}
+
+.center{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************ENDBODY/MAININFO**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************ABOUTSECTION**************************************************************************************************************************/
+
+.middle{
+    padding:10px 15px;
+    text-align:center;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.round{
+    height:580px;
+}
+
+.columnabout{
+    width:50%;
+    float:left;
+    padding: 10px 15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+/***********************************************************************************************ENDABOUTSECTION**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************CONTACTSECTION**************************************************************************************************************************/
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.contact{
+    width:100%;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color:skyblue;
+  padding:12px 15px;
+  position: relative;
+    
+    
+}
+
+
+/* this is the form on the contact page*/
+form{
+  width:80%;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color:#fff7d8;
+  padding:12px 15px;
+  position: relative;
+
+}
+
+
+label{
+  display: block;
+  padding: .5em 0;
+  font-family: 'Lora', serif;
+  font-weight:bold;
+  color:#0F2736;
+}
+
+input, textarea{
+     width: 100%;
+     height: 30px;
+     padding:12px 15px;
+     border:2px;
+     border-radius: 12px;
+     border-color: #FFF4AC;
+     box-sizing: border-box;
+     resize: none;
+     box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+textarea{
+     height: 200px;
+}
+
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+option{
+     border-radius: 12px;
+
+}
+
+#name{
+  font-family: 'Lora', serif;
+}
+
+/* style for the submit button*/
+#submit{
+  float:right;
+  border-radius: 12px;
+  padding:1em;
+  padding:.5em;
+  margin:1em .5em;
+  cursor: pointer;
+  color:#0F2736;
+  font-size: 17px;
+  font-family: 'Lora', serif;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+button{
+    border-radius:12px;
+    color:#0F2736;
+    
+}
+.antispam{
+     display: none;
+}
+
+#thanks{
+     margin: 0 auto;
+}
+
+form::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+/* this is the end of the form content on the contact page*/
+
+/***********************************************************************************************ENDCONTACTSECTION**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************FOOTERINFORMATION**************************************************************************************************************************/
+
+footer{
+	width: 100%;
+	text-align: center;
+	font-family: 'Lora', serif;
+    font-size:20px;
+	padding: 15px 20px;
+    margin-top:180px;
+    color: black;
+}
+
+.footer-center{
+    text-align:center;
+    font-size:18px;
+}
+
+/***********************************************************************************************ENDFOOTERINFORMATION**************************************************************************************************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* The styles above apply to the desktop layout, the media queries you add below change those styles for smaller screens */
+
+/*applies only to screens under 768px - mobile*/
+@media only screen and (max-width: 768px){
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    
+ .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+    
+    
+    
+    .footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+   
+    
+    
+    
+    
+    
+
+
+ 
+
+/*applies only to screens btwn 769px and 992px - tablet*/
+@media only screen and (min-width:769px) and (max-width: 992px){
+
+	}
