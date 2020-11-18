@@ -8,84 +8,69 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="yellowbunnystudiostylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="navleft">
-        <a id="home" href="index.html" class="logo"><img class="logotype" src ="images/newmonogram.png"></a>
-        <div id="navright" class="topnav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <div class="dropdown">
-                <button class="dropbtn">Portfolio</button>
-                <div class="dropdown-content">
-                   <a href="editing.html">Editing</a>
-                    <a href="motiongraphics.html">Motion Graphics</a>
-                    <a href="color.html">Color</a>
-                </div>
+    <header>
+        <div class="navbar">
+            <a id="home" href="index.html" class="logo"><img class="logotype" src="images/lettermark_single.png"></a>
+            
+            <div class="navright">
+                <a href="index.html">Home</a>
+                <a href="Work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
             </div>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
         </div>
     </header>
     
 <main>
-    
-    
-    <section class="spacer"></section>
-    
-    
-    <section>
+    <div class="maincontent">
+        <div class="tagline"> <p> Orchestrate stories, Impact Lives</p></div>
         
-        <section class="section-title">
+    <section class="section-title">
         <h1><img src="images/contactheader.png"></h1>
-    </section>    
+    </section> 
         
-    <section class="spacer"></section>
+        <div>
+            <img class="name centerlogo" src="images/lettermark_new.png">
+        </div>
     
+        <div class="row">
+            <div class="contacticon">
+                <i class="fa fa-phone"></i>
+            </div>
+            
+            <div class="contacticon">
+                <p>765-404-0439</p>
+            </div>
+        </div>
         
-       <section class="columnabout">
-           <div class="footer-center">
-                  <div>
-                      <i class="fa fa-map-marker"></i>
-                      <p>Yellow Bunny Studio</p>
-                  </div>
-                  
-               <section class="headspace"></section>
-               
-                  <div>
-                      <i class="fa fa-phone"></i>
-                      <p> Upon requested </p>
-                  </div>
-                  
-               <section class="headspace"></section>
-               
-                  <div>
-                      <i class="fa fa-envelope"></i>
-                      <p><a href="mailto:maurajing@gmail.com">maurajing@gmail.com</a></p>
-                  </div>
-               
-               <section class="headspace"></section>
-               
-               <p class="footer-company-about">
-                      Orchestrate stories, Impact Lives
-                  </p>
-                  
-                  <div class="footer-icons">
-                      <a href="https://www.linkedin.com/in/maurakentpostproduction/"><i class="fab fa-linkedin-in"></i>
-                      </a>
-                      <a href="https://vimeo.com/maurakent"><i class="fab fa-vimeo-v"></i>
-                      </a>
-                  </div>
-              </div>
+        <div class="row">
+            <div class="contacticon">
+                <i class="fa fa-envelope"></i>
+            </div>
+            
+            <div class="contacticon">
+                <p><a href="mailto:maurajing@gmail.com">maurajing@gmail.com</a></p>
+            </div>
+        </div>
+            
+        <div class="breakline"></div>
+        
+        
+        <section>
+            <div class="formtag">
+                <p> Use this form to quickly reach me to inquire about a project.</p>
+            
+            </div>
+        
+        
         </section>
         
-        
-        <section class="columnabout">
+        <section>
             <div>
 				<form action="https://formspree.io/mqkyaanq"
                       method="POST">
@@ -116,22 +101,20 @@
 			</div>
     </section>
     
+        
+    </div>
     
     
-    <section class="spacer"></section>
-    <section class="spacer"></section>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </section>
+     <!-- <div class="footer-icons">
+                      <a href="https://www.linkedin.com/in/maurakentpostproduction/"><i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://vimeo.com/maurakent"><i class="fab fa-vimeo-v"></i>
+                      </a>
+                  </div> -->
+            
+        
+        
+        
     
     
     
@@ -145,25 +128,22 @@
     
 </main>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <section class="footer">
-          <footer>
+<div class="spacer"></div>
+<div class="breakline"></div>
+     
+        
+    <section id="footer">
+          <footer class="footer">
               <div>
                   <p class="footer-company-name">YellowBunnyStudio &copy; 2020</p>
               </div>
         </footer>
-    </section>
+    </section> 
+    
+    
+    
+    
+    
 </body>
 
 </html>
