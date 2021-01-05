@@ -3,29 +3,41 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<meta name="description" content=" ">
+	<title>Yellowbunny Studios About</title>
+	<meta name="description" content="Telling consequential, diverse and eye-opening stories <br>through collaboration, cutting, color and motion graphics, <br>whether through Narratives or Documentaries.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="yellowbunnystudiostylesheet.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="yellowbunnystudiostylesheet.css">
+    
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <a id="home" href="index.html" class="logo"><img class="logotype" src="images/lettermark_single.png"></a>
+     <header class="header">
+            <a id="home" href="index.html" class="svg_logo">
+                <img src="lettermark_new_two-02.svg" class="svg_custom" alt="logo"/>
+            </a>
+        
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        
+        <ul class="menu">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html">Work</a></li>
+             <li><a href="index.html" class="active">Home</a></li>
             
-            <div class="navright">
-                <a href="index.html">Home</a>
-                <a href="Work.html">Work</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        </ul>
+        
+        <ul class="menu-icons">
+        <li><a href="https://www.linkedin.com/in/maurakentpostproduction/"><i class="fab fa-linkedin-in"></i>
+         </a></li>
+            <li><a href="https://vimeo.com/maurakent"><i class="fab fa-vimeo-v"></i></a></li>
+            <li><a href="https://www.instagram.com/yellowbunnystudio/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        
             
-        </div>
-    
     </header>
     
     
@@ -50,14 +62,20 @@
     <div class="aboutbreakline"></div>
     
     <section id="resume">
-        
-        
+         <div class="download">
+                    <div>
+                        <i class="fas fa-cloud-download-alt cloud"></i>
+                        <span>
+                        <a class="resumelink" href="images/newresume.pdf"> Download Resume</a>
+                        </span>
+                    </div>                
+                </div>
         <div>
-             <iframe src="images/newresume.pdf" width="50%" height="1000px"></iframe>
-        
+             <img class="resume" src="images/newresume.jpg">
+
         </div>
-        
-    
+       
+            
     </section>
     
     
@@ -73,6 +91,20 @@
     <section id="footer">
           <footer class="footer">
               <div>
+                  <a href="https://www.linkedin.com/in/maurakentpostproduction/">
+                      <i class="fab fa-linkedin-in">
+                      </i>
+                  </a>
+                  
+                  <a href="https://vimeo.com/maurakent">
+                      <i class="fab fa-vimeo-v">
+                      </i>
+                  </a>
+                  
+                  <a href="https://www.instagram.com/yellowbunnystudio/">
+                      <i class="fab fa-instagram">
+                      </i>
+                  </a>
                   <p class="footer-company-name">YellowBunnyStudio &copy; 2020</p>
               </div>
         </footer>
