@@ -19,9 +19,30 @@ html{
 }
 
 
+/*-------------------------------------------------------------------------------------------headings------------------------------ */
 
 p{
     line-height:20px;
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+
+
+h2{
+    font-family: 'Lora', serif;
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 4px;
+    padding-top: 1em;
+    
 }
 
 
@@ -29,17 +50,164 @@ p{
 
 
 
+/*----------------------------------------------------------------------------------------------end headings----------------------- */
+
+
 
 
 
 
 /***********************************************************************************************HEADER**************************************************************************************************************************/
-/* header */
+
+
+/* nav header */
+
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Lora', serif;
+    color:#4D4748;
+    
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-size:18px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 10px 10px;
+    color: #4D4748;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color:#F2D543;
+}
+
+.header li a:active {
+  color:#f2d543;
+}
+
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
 
 
 
-video{
-  width:100%;  
+
+
+.menu-icons{
+    display:inline-block;
+    float:right;
+    
+}
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float:right;
+      display:inline-block;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 
@@ -61,11 +229,6 @@ video{
     padding: 1em 6.4em;
 }
 
-
-a{
-    text-decoration:none;
-    color:black;
-}
 
 
 /* Clear floats after the columns */
@@ -95,71 +258,25 @@ a{
 }
 
 
-.logo{
-    font-size:25px;
-    text-decoration:none;
-    font-family: 'Lora', serif;
-    padding: 5px;
-    max-width: 75px;
-    text-align: center;
-}
 
-.recsidecolumn{
-    width:50%;
-    float:right;
-    padding:15px;
-}
-
-
-
-
-
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-    z-index: 1;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2d543;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-    font-size: 18px;
-}
-
-
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-
-
-.navright{
-    float:right;
-}
-
-.navcenter{
-    text-align: center;
-    display: block;
+.svg_custom{
+    max-width: 60px;
+    display: inline-flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-}
-
-.navright a:hover{
-    background: #173158;
-  color: #f2d543;
+    
     
 }
+
+.svg_logo{
+    max-width:250px;
+}
+
+
+
+
+
+
 /***********************************************************************************************ENDHEADER**************************************************************************************************************************/
 
 
@@ -180,40 +297,10 @@ a{
 
 
 
-.projectheader{
-    display:block;
-    margin-bottom:48px;
-    padding-left: 48px;
-    padding-right:48px;
-    color: black;
-   
-}
-
-
 li{
     list-style:none;
     text-decoration:none;
 }
-
-
-.break{
-    border: 5px solid #023b64;
-    border-radius: 10px;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-
-.videoart{
-    width:50%;
-    float:right;
-    padding:15px;
-    align-content:center;
-    margin-left:auto;
-    margin-right:auto;
-}
-
 
 
 .videomain{
@@ -227,10 +314,6 @@ li{
     text-align:center;
 }
 
-.active{
-  background-color: #666;
-  color: white;
-}
 
 
 
@@ -299,19 +382,6 @@ li{
 
 
 
-
-h2{
-    font-family: 'Lora', serif;
-    font-size: 31px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000;
-    letter-spacing: 4px;
-    padding-top: 1em;
-    
-}
-
-
 .textinfo, textlist{
     font-family: 'Raleway', sans-serif;
     line-height: 28px;
@@ -345,9 +415,9 @@ button{
      margin:1em .5em;
      border:none;
      border-radius: 12px;
-     background-color:#f2d543;
+     background-color:#fdfd96;
      cursor: pointer;
-     color:#0F2736;
+     color:#4D4748;
      padding: 14px 16px;
      text-decoration: none;
      font-size: 17px;
@@ -365,8 +435,752 @@ button{
 
 
 button:hover{
-     background-color:#0F2736;
-     background: rgb(90, 134, 204, 0.4);
+     background-color:#ffffdb;
+    
+}
+
+button.is-checked{
+     text-decoration: overline;
+}
+/* this is the end of the work section buttons content.*/
+
+
+
+/***********************************************************************************************ENDBODY/MAININFO**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************ABOUTSECTION**************************************************************************************************************************/
+
+.middle{
+    padding:10px 15px;
+    text-align:center;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.round{
+    max-width:290px;
+    border-radius: 50%;
+}
+
+.columnabout{
+    text-align: center;
+    padding: 10px 15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.aboutbreakline{
+    max-width:800px;
+    height:1px;
+    background: rgba(0,0,0,0.1);
+    margin:60px auto;
+}
+
+
+.aboutinfo{
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+#resume{
+    text-align: center;
+}
+
+.resume{
+        width:70%;
+        
+    }
+
+
+.download{
+    text-align: center;
+    
+}
+
+.download:hover{
+    color:#fdfd96;
+    text-decoration: underline;
+}
+
+.resumelink{
+    color:#4D4748;
+}
+
+
+/***********************************************************************************************ENDABOUTSECTION**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************CONTACTSECTION**************************************************************************************************************************/
+
+.tagline {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 100;
+    font-family: 'Lora', serif;
+    color: #000;
+    line-height: 48px;
+    padding: 1em 6.4em;
+    margin-top:60px;
+}
+
+
+.centerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contacticon{
+    display:block;
+    text-align: center;
+    font-size: 18px;
+    padding:10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.formtag{
+    text-align: center;
+    font-size: 18px;
+    padding:20px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.name{
+    max-width:175px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.contact{
+    width:100%;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color:skyblue;
+  padding:12px 15px;
+  position: relative;
+    
+    
+}
+
+
+/* this is the form on the contact page*/
+form{
+  width:80%;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color:#fff7d8;
+  padding:12px 15px;
+  position: relative;
+
+}
+
+
+label{
+  display: block;
+  padding: .5em 0;
+  font-family: 'Lora', serif;
+  font-weight:bold;
+  color:#0F2736;
+}
+
+input, textarea{
+     width: 100%;
+     height: 30px;
+     padding:12px 15px;
+     border:2px;
+     border-radius: 12px;
+     border-color: #FFF4AC;
+     box-sizing: border-box;
+     resize: none;
+     box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+textarea{
+     height: 200px;
+}
+
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+option{
+     border-radius: 12px;
+
+}
+
+#name{
+  font-family: 'Lora', serif;
+}
+
+/* style for the submit button*/
+#submit{
+  float:right;
+  border-radius: 12px;
+  padding:1em;
+  padding:.5em;
+  margin:1em .5em;
+  cursor: pointer;
+  color:#0F2736;
+  font-size: 17px;
+  font-family: 'Lora', serif;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+button{
+    border-radius:12px;
+    color:#4D4748;
+    
+}
+.antispam{
+     display: none;
+}
+
+#thanks{
+     margin: 0 auto;
+}
+
+form::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+/* this is the end of the form content on the contact page*/
+
+/***********************************************************************************************ENDCONTACTSECTION**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************FOOTERINFORMATION**************************************************************************************************************************/
+
+.footer{
+	font-family: 'Lora', serif;
+    font-size:20px;
+    margin-top:180px;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.footer-company-name{
+    padding-top:12px;
+}
+
+
+/***********************************************************************************************ENDFOOTERINFORMATION**************************************************************************************************************************/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* The styles above apply to the desktop layout, the media queries you add below change those styles for smaller screens */
+
+/*applies only to screens under 768px - mobile*/
+@media only screen and (max-width: 768px){
+    
+ /***********************************************************************************************HEADER**************************************************************************************************************************/
+/* header */
+
+
+
+
+
+.section-title{
+    margin-top:87px;
+    color:black;
+    font-size:20px;
+    font-family: 'Lora', serif;
+    text-align:center;
+}
+
+
+.title{
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 1em;
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacer{
+    padding:50px;
+    clear:both;
+}
+
+.spacerabout{
+    padding:12px;
+}
+
+
+.headspace{
+    padding: 20px;
+}
+
+.logotype{
+    display:inline-block;
+    float:left;
+}
+
+
+.logo{
+    font-size:25px;
+    text-decoration:none;
+    font-family: 'Lora', serif;
+    padding: 5px;
+    max-width: 75px;
+    text-align: center;
+}
+
+
+
+
+
+/* nav header */
+
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Lora', serif;
+    color:#4D4748;
+    
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-size:18px;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    color: #4D4748;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color:#F2D543;
+}
+
+.header li a:active {
+  color:#f2d543;
+}
+
+
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/***********************************************************************************************ENDHEADER**************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************BODY/MAININFO**************************************************************************************************************************/
+
+
+
+li{
+    list-style:none;
+    text-decoration:none;
+}
+
+
+.videomain{
+    width:100%;
+    padding:15px;
+    
+}
+
+.center{
+    text-align:center;
+}
+
+.active{
+  background-color: #fdfd96;
+  color: white;
+}
+
+
+
+.about1{
+    text-align: center;
+    line-height: 35px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 15px;
+}
+
+
+
+.maincontent{
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+.breakline {
+    max-width: 300px;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 60px auto;
+}
+
+
+
+.columnvideo{
+    width:100%;
+    padding: 10px;
+    display: block;
+    margin-top: 2em;
+    
+}
+.columntext{
+    width:100%;
+    margin-top:3em;
+    margin-bottom:4em;
+    margin-right: 2%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.grid-item, .grid-sizer {
+     padding: .5em;
+
+}
+
+
+
+.grid-item{
+     position: relative;
+}
+
+
+
+
+h2{
+    font-family: 'Lora', serif;
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 4px;
+    padding-top: 1em;
+    
+}
+
+
+.textinfo, textlist{
+    font-family: 'Raleway', sans-serif;
+    line-height: 28px;
+    padding: 0.5em 0;
+    font-weight: 300;
+    list-style-type: none;
+
+}
+
+
+.text-breakline{
+    max-width: 300px;
+    height: 1px;
+    background: rgba(0,0,0,0.25);
+    margin: 1.5em 0;
+}
+
+
+
+.buttonmain{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+
+/* these are the work section buttons*/
+button{
+     padding:.5em;
+     margin:1em .5em;
+     border:none;
+     border-radius: 12px;
+     background-color:#fdfd96;
+     cursor: pointer;
+     color:#4D4748;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     font-family: 'Lora', serif;
+     font-weight:bold;
+     text-transform: uppercase;
+     list-style: none;
+     text-decoration: none;
+}
+
+.button-group.filter-button-group{
+     display: grid;
+     width: 100%;
+}
+
+
+button:hover{
+     background-color:#ffffdb;
 }
 
 button.is-checked{
@@ -415,6 +1229,7 @@ button.is-checked{
 
 .round{
     max-width:290px;
+    border-radius: 50%;
 }
 
 .columnabout{
@@ -425,7 +1240,7 @@ button.is-checked{
 }
 
 .aboutbreakline{
-    max-width:800px;
+    max-width:300px;
     height:1px;
     background: rgba(0,0,0,0.1);
     margin:60px auto;
@@ -434,15 +1249,34 @@ button.is-checked{
 
 .aboutinfo{
     line-height: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
+.resume{
+        width:100%;
+        
+    }
 
 
-#resume{
+.download{
     text-align: center;
+    
 }
-/***********************************************************************************************ENDABOUTSECTION**************************************************************************************************************************/
 
+.download:hover{
+    color:#fdfd96;
+    text-decoration: underline;
+}
+
+.resumelink{
+    color:#4D4748;
+}
+
+
+   
+    
+
+/***********************************************************************************************ENDABOUTSECTION**************************************************************************************************************************/
 
 
 
@@ -470,11 +1304,12 @@ button.is-checked{
 
 .tagline {
     text-align: center;
-    font-size: 38px;
+    font-size: 20px;
     font-weight: 100;
+    font-family: 'Lora', serif;
     color: #000;
     line-height: 48px;
-    padding: 1em 6.4em;
+    padding: 1em;
     margin-top:60px;
 }
 
@@ -624,7 +1459,7 @@ option{
 
 button{
     border-radius:12px;
-    color:#0F2736;
+    color:#4d4748;
     
 }
 .antispam{
@@ -674,171 +1509,6 @@ form::after{
 
 
 /***********************************************************************************************ENDFOOTERINFORMATION**************************************************************************************************************************/ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*MEDIA QUERIES*/
-/* The styles above apply to the desktop layout, the media queries you add below change those styles for smaller screens */
-
-/*applies only to screens under 768px - mobile*/
-@media only screen and (max-width: 768px){
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-    
- .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-    
-    
-    
-    .footer-distributed{
-		font: bold 14px sans-serif;
-	
-	}
- 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
- 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-	.main {
-		line-height: normal;
-		font-size: auto;
-	}
-    
     
     
     
