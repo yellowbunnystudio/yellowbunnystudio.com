@@ -92,13 +92,22 @@ h2{
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color:#F2D543;
+  color:gray;
 }
 
 .header li a:active {
-  color:#f2d543;
+    text-decoration-color:grey;
+    
 }
 
+
+.navhover a{
+    color:gray;
+}
+.navactive{
+    text-decoration-color:grey;
+    text-decoration-line: line-through;
+}
 
 .header .logo {
   display: block;
@@ -329,7 +338,7 @@ li{
 
 .maincontent{
     padding: 40px;
-    max-width: 1280px;
+    
     margin: 0 auto;
 }
 
@@ -345,19 +354,48 @@ li{
 
 
 .columnvideo{
-    float: left;
+    float: right;
     width: 50%;
     padding: 10px;
     display: block;
-    margin-top: 2em;
+    
     
 }
 .columntext{
     width:38%;
     margin-top:3em;
     margin-bottom:4em;
-    float: left;
+    float: right;
     margin-right: 2%;
+    display: block;
+}
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.flex-containertext{
+    display: block;
+    float:right;
+    font-family: 'Raleway', sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    list-style-type: none;
+    width: 50%;
+    
+    
+}
+
+
+.containertext{
+    padding:10px;
+    margin-left:50px;
 }
 
 
@@ -411,21 +449,22 @@ li{
 
 /* these are the work section buttons*/
 button{
-     padding:.5em;
-     margin:1em .5em;
-     border:none;
-     border-radius: 12px;
-     background-color:#fdfd96;
-     cursor: pointer;
-     color:#4D4748;
-     padding: 14px 16px;
-     text-decoration: none;
-     font-size: 17px;
-     font-family: 'Lora', serif;
-     font-weight:bold;
-     text-transform: uppercase;
-     list-style: none;
-     text-decoration: none;
+    padding:.5em;
+    margin:1em .5em;
+    border:none;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #fdfd96;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lora', serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
 }
 
 .button-group.filter-button-group{
@@ -440,7 +479,8 @@ button:hover{
 }
 
 button.is-checked{
-     text-decoration: overline;
+    text-decoration:line-through;
+    text-decoration-color:#fdfd96;
 }
 /* this is the end of the work section buttons content.*/
 
@@ -1153,21 +1193,28 @@ li{
 }
 
 
-
-.columnvideo{
-    width:100%;
-    padding: 10px;
+.flex-container {
     display: block;
-    margin-top: 2em;
+    flex-direction: column;
+}
+
+
+.flex-containertext{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    list-style-type: none;
+    width: 100%;
+    
     
 }
-.columntext{
-    width:100%;
-    margin-top:3em;
-    margin-bottom:4em;
-    margin-right: 2%;
-}
 
+
+.containertext{
+    padding:10px;
+    margin-left:50px;
+}
 
 /* Clear floats after the columns */
 .row:after {
